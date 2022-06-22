@@ -131,5 +131,5 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
     UI.showAlert('Book removed from list.', 'warning');
 
     // Remove book from storage
-    Store.removeBook(e.target.parentElement.previousParentElementSibling.textContent);
+    Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 })
